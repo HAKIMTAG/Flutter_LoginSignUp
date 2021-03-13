@@ -15,7 +15,7 @@ class Ourlogin extends StatelessWidget {
           ),
           MediaQuery.of(context).size.width < 500
               ? Expanded(
-                  flex: 0,
+                  flex: 1,
                   child: ImageSide(),
                 )
               : Expanded(

@@ -7,7 +7,7 @@ class LoginFormFields extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 200),
       child: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          //  mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(

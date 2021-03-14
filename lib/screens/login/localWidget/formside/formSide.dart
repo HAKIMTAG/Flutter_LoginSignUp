@@ -8,6 +8,8 @@ class FormSide extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size _size = MediaQuery.of(context).size;
+    double _fontsize = _size.width < 350 ? 10 : 20;
     return Container(
       padding: EdgeInsets.all(20),
       child: Stack(children: [
@@ -34,11 +36,13 @@ class FormSide extends StatelessWidget {
             children: [
               Text(
                 "COWDIV ",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(fontSize: _fontsize, fontWeight: FontWeight.bold),
               ),
               Text(
                 "tous les droits sont réservés",
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.w100),
+                style:
+                    TextStyle(fontSize: _fontsize, fontWeight: FontWeight.w100),
               ),
             ],
           ),

@@ -1,13 +1,17 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class LoginFormFields extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    //the height and the width of the screen
+    Size _size = MediaQuery.of(context).size;
+    double _fontsize = _size.width < 350 ? 10 : 20;
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 200),
       child: SingleChildScrollView(
         child: Column(
-          //  mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(
@@ -72,7 +76,8 @@ class LoginFormFields extends StatelessWidget {
                 FlatButton(
                   child: Text(
                     "mote de passe oublié",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w100),
+                    style: TextStyle(
+                        fontSize: _fontsize, fontWeight: FontWeight.w100),
                   ),
                   onPressed: () {},
                 )

@@ -1,3 +1,4 @@
+import 'package:cowino/screens/login/localWidget/formside/loginformfields.dart';
 import 'package:flutter/material.dart';
 
 import './localWidget/formside/formSide.dart';
@@ -6,24 +7,24 @@ import './localWidget/imageside.dart';
 class Ourlogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        children: [
-          Expanded(
-            flex: 3,
-            child: FormSide(),
-          ),
-          MediaQuery.of(context).size.width < 500
-              ? Expanded(
-                  flex: 1,
-                  child: ImageSide(),
-                )
-              : Expanded(
-                  flex: 2,
-                  child: ImageSide(),
-                ),
-        ],
-      ),
-    );
+    Size _size = MediaQuery.of(context).size;
+    if (_size.width > 700) {
+      return Container(
+        child: Row(
+          children: [
+            Expanded(
+              flex: 3,
+              child: FormSide(),
+            ),
+            Expanded(
+              flex: 2,
+              child: ImageSide(),
+            ),
+          ],
+        ),
+      );
+    } else {
+      return FormSide();
+    }
   }
 }

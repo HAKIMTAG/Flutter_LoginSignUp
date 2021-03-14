@@ -1,3 +1,4 @@
+import 'package:cowino/screens/login/localWidget/formside/loginformfields.dart';
 import 'package:cowino/screens/login/ourlogin.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +13,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      // theme: OurTheme().buildTheme(),
-      home: Scaffold(body: Ourlogin()),
-    );
+        debugShowCheckedModeBanner: false,
+        // theme: OurTheme().buildTheme(),
+        home: Scaffold(
+          body: Ourlogin(),
+        ));
   }
 }

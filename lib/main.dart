@@ -1,8 +1,8 @@
-import 'package:cowino/screens/login/localWidget/formside/loginformfields.dart';
-import 'package:cowino/screens/login/ourlogin.dart';
+import 'package:cowino/screens/HomePage/home_page.dart';
+//import 'package:cowino/screens/login/ourlogin.dart';
 import 'package:flutter/material.dart';
 
-import './utiles/ourTheme.dart';
+//import './utiles/ourTheme.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         // theme: OurTheme().buildTheme(),
         home: Scaffold(
-          body: Ourlogin(),
+          body: HomePage(),
         ));
   }
 }

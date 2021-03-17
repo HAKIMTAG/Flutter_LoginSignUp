@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './loginformfields.dart';
-import './applogo.dart';
+import 'formside/loginformfields.dart';
+import 'formside/applogo.dart';
 
 class FormSide extends StatelessWidget {
   final fromsideStartcolor = Colors.white;

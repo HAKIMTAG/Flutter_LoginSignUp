@@ -1,7 +1,7 @@
 import 'package:cowino/screens/login/localWidget/formside/loginformfields.dart';
 import 'package:flutter/material.dart';
 
-import './localWidget/formside/formSide.dart';
+import 'localWidget/formSide.dart';
 import './localWidget/imageside.dart';
 
 class Ourlogin extends StatelessWidget {

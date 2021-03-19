@@ -45,7 +45,7 @@ class SubHeader extends StatelessWidget {
           Container(
             height: 40,
             padding: EdgeInsets.all(10),
-            color: Colors.grey[300],
+            color: Colors.grey[50],
             //margin: EdgeInsets.only(left: 20, right: 10),
             // decoration: BoxDecoration(
             //   borderRadius: BorderRadius.circular(10),

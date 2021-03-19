@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'CalendarSide.dart';
 import 'DashboardWidgets/CowsStatusCard.dart';
 import 'DashboardWidgets/NewAction.dart';
 import 'DashboardWidgets/SubHeader.dart';
@@ -11,6 +12,7 @@ class DashBoard extends StatelessWidget {
     return Container(
       width: _size.width,
       height: _size.height,
+      color: Colors.white,
       child: Row(
         // mainAxisAlignment: MainAxisAlignment.start,
 
@@ -92,7 +94,7 @@ class DashBoard extends StatelessWidget {
           // rifgt side widget
           Expanded(
             flex: 3,
-            child: Placeholder(),
+            child: CalendarSide(),
           )
         ],
       ),

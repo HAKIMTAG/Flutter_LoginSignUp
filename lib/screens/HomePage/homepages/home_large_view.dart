@@ -14,6 +14,7 @@ class HomeLargeView extends StatelessWidget {
             child: Menu(),
           ),
           Expanded(
+            //flex: ,
             child: DashBoard(),
           ),
         ],
